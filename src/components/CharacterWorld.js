@@ -5,13 +5,15 @@ const isKnown = text => text && text !== 'unknown';
 
 const CharacterWorld = ({ world }) =>
   <div id='character-world' className='col-md-6'>
-    <h1>World</h1>
-    {isKnown(world.name) && <p>Name: {world.name}</p>}
-    {isKnown(world.population) && <p>Population: {world.population}</p>}
-    {isKnown(world.diameter) && <p>Diameter: {world.diameter}km</p>}
-    {isKnown(world.rotation_period) && <p>Day length: {world.rotation_period} hours</p>}
-    {isKnown(world.orbital_period) && <p>Year length: {world.orbital_period} days</p>}
-    {isKnown(world.climate) && <p>Climate: {world.climate}</p>}
+    <h1 className="text-warning pb-4">World</h1>
+    <ul className="list-group">
+    {isKnown(world.name) && <li className="list-group-item list-group-item-dark text-warning ">Name: {world.name}</li>}
+    {isKnown(world.population) && <li className="list-group-item list-group-item-dark text-warning ">Population: {world.population}</li>}
+    {isKnown(world.diameter) && <li className="list-group-item list-group-item-dark text-warning ">Diameter: {world.diameter}km</li>}
+    {isKnown(world.rotation_period) && <li className="list-group-item list-group-item-dark text-warning ">Day length: {world.rotation_period} hours</li>}
+    {isKnown(world.orbital_period) && <li className="list-group-item list-group-item-dark text-warning ">Year length: {world.orbital_period} days</li>}
+    {isKnown(world.climate) && <li className="list-group-item list-group-item-dark text-warning ">Climate: {world.climate}</li>}
+    </ul>
   </div>;
 
 const mapStateToProps = ({ character: { world } }) => ({

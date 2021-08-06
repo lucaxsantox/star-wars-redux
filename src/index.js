@@ -7,6 +7,8 @@ import thunk from 'redux-thunk';
 import reportWebVitals from './reportWebVitals';
 import reducer from './redux';
 import { getCharacters } from './redux/characters/actions';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Index.css';
 
 const store = createStore(reducer, compose (
   applyMiddleware(thunk),
