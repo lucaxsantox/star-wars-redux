@@ -14,28 +14,28 @@ import logo8 from '../assets/image/star8.png';
 function Stars() {
   return (
     <>
-    <div className="star star1">
+    <div className="stars star1">
     <img src={logo} />
     </div>
-        <div className="star star2">
+        <div className="stars star2">
         <img src={logo2} />
         </div>
-            <div className="star star3">
+            <div className="stars star3">
             <img src={logo3} />
             </div>
-                <div className="star star4">
+                <div className="stars star4">
                 <img src={logo4} />
                 </div>
-                    <div className="star star5">
+                    <div className="stars star5">
                     <img src={logo5} />
                     </div>
-                        <div className="star star6">
+                        <div className="stars star6">
                         <img src={logo6} />
                         </div>
-                            <div className="star star7">
+                            <div className="stars star7">
                             <img src={logo7} />
                             </div>
-                                <div className="star star8">
+                                <div className="stars star8">
                                 <img src={logo8} />
     </div>
     

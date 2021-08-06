@@ -10,7 +10,7 @@ const CharacterList = ({ characters, setCharacter }) =>
     <h1 className="text-warning pb-4">Characters</h1>
     <ul className="list-group">
         {characters.map((c, i) =>
-            <li key={c.name} onClick={setCharacter(i+1)} className="list-group-item list-group-item-dark text-warning">
+            <li key={c.name} onClick={setCharacter(i+1)} className="list-group-item list-group-item-dark text-white">
                 {c.name}
             </li>)}
     </ul>
