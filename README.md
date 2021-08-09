@@ -14,7 +14,7 @@ O Star-wars-redux é um projeto feito para o estudo de React.
 * [Screenshots](#screenshots)
 
 ## Sobre o projeto
-É uma aplicação em React que se alimenta da <a href="https://swapi.py4e.com/"> </a> e retorna as informações sobre o universo de Star Wars.
+É uma aplicação em React que se alimenta da API https://swapi.py4e.com/ e retorna as informações sobre o universo de Star Wars.
 
 	
 ## Tecnologias
